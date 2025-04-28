@@ -1,0 +1,32 @@
+@import 'variables';
+@import 'mixins';
+
+.nav {
+    position: fixed;
+    width: 100%;
+    height: 88px;
+    background: transparent;
+    color: $white;
+    display: flex;
+    padding: 28.88px 376px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 181.83506774902344px;
+    height: 30.239999771118164px;
+    cursor: pointer;
+}
+
+.list-horizontal {
+    @include horizontal-list;
+}
+
+.tel {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%;
+    letter-spacing: 0%;
+    cursor: pointer;
+}
