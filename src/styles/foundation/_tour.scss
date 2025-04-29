@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixins';
 
 .tour {
     text-align: center;
@@ -7,15 +8,14 @@
     }
 
     .list-horizontal {
-        width: 700px;
-        height: 34px;
+        @include horizontal-list($black, 30px);
         margin: 0 auto;
         margin-top: 35px;
         margin-bottom: 100px;
         text-align: center;
-        justify-content: space-between;
+        width: 700px;
     }
-
+    padding-bottom: 135px;
 }
 
 .cards {
@@ -25,6 +25,10 @@
     margin: 0 auto;
     flex-flow: row wrap;
     justify-content: space-between;
+}
+
+.mt-3 {
+    margin-bottom: 30px;
 }
 
 .cards__item {
@@ -39,6 +43,7 @@
     overflow: hidden;
     cursor: pointer;
     text-align: start;
+
     background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%);
 
     img {
@@ -46,6 +51,8 @@
         width: 100%;
         height: 100%;
         z-index: -1;
+        transform: scale(1);  
+        transition: transform 300ms ease;
     }
 
     .card__top {
@@ -58,6 +65,15 @@
 
     .card__btn {
         margin: 50px;
+        transition: .3s;
+        border-radius: 50px;
+        position: relative;
+        width: 199px;
+        height: 42px;
+        padding: 7px;
+        padding-left: 20px;
+        padding-right: 8px;
+        margin-left: 30px;
     }
 
     .card__btn::after {
@@ -70,5 +86,13 @@
         position: absolute;
         margin-top: 2px;
         margin-left: 15px;
+    }
+
+    &:hover img{
+        transform: scale(1.2);
+    }
+
+    &:hover .card__btn {
+        background-color: $green-400;
     }
 }

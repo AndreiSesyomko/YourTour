@@ -3,14 +3,16 @@
 
 .nav {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     height: 88px;
     background: transparent;
     color: $white;
     display: flex;
-    padding: 28.88px 376px;
+    padding: 28.88px 19.58333333333333%;
     justify-content: space-between;
     align-items: center;
+    z-index: 10;
+    transition: .1s;
 }
 
 .logo {
@@ -20,13 +22,19 @@
 }
 
 .list-horizontal {
-    @include horizontal-list;
+    @include horizontal-list($white);
 }
 
 .tel {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 142%;
-    letter-spacing: 0%;
     cursor: pointer;
+}
+
+.scrolled {
+    color: $black;
+    background: #F3EFE899;
+    backdrop-filter: blur(54px);
+    
+    .list-horizontal {
+        @include horizontal-list($black);
+    }
 }

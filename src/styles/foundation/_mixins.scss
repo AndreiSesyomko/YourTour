@@ -1,23 +1,25 @@
 
-@mixin horizontal-list {
+@mixin horizontal-list($b-color, $mr: 50px) {
     display: flex;
     align-items: center;
 
     .list__item {
-        margin-right: 50px;
+        margin-right: $mr;
         cursor: pointer;
         a { transition: .2s;}
         a:after {
             display: block;
             content: '';
-            border-bottom: solid 1px $orange-200;  
+            border-bottom: solid 1px $b-color;  
             transform: scaleX(0);  
-            transition: transform 200ms ease-in-out;
+            transition: transform 200ms ease-in-out, border-color 200ms ease-in-out;
         }
-        a:hover {color: $orange-200;}
         a:focus {color: $orange-200;}
         a:hover:after { transform: scaleX(1); }
-        a:focus:after {transform: scaleX(1);}
+        a:focus:after {
+            transform: scaleX(1);
+            border-color: $orange-200;
+        }
     }
 
     .list__item:last-child {
