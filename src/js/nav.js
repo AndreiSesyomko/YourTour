@@ -1,5 +1,5 @@
 
-function changeNav() {
+export default function changeNav() {
     const nav = document.querySelector('nav');
     const logo = document.getElementById('logo');
     
@@ -11,5 +11,3 @@ function changeNav() {
         logo.src = "/src/images/YourTour.svg";
     }
 }
-
-window.addEventListener('scroll', changeNav);

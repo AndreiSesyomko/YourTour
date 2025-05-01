@@ -1,6 +1,11 @@
 *, *:before, *:after {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F9F7F4;
 }
 
 html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
@@ -43,7 +48,6 @@ table {
 }
 
 input {
-  -webkit-appearance: none;
   border-radius: 0;
 }
 
@@ -63,6 +67,7 @@ h2 {
   font-size: 59px;
   line-height: 124%;
   letter-spacing: 0;
+  text-align: center;
 }
 
 h3 {
@@ -100,7 +105,7 @@ h3 {
   background: transparent;
   color: #fff;
   display: flex;
-  padding: 28.88px 19.5833333333%;
+  padding: 28.88px 376px;
   justify-content: space-between;
   align-items: center;
   z-index: 10;
@@ -127,7 +132,7 @@ h3 {
 .list-horizontal .list__item a:after {
   display: block;
   content: "";
-  border-bottom: solid 1px #fff;
+  border-bottom: solid 2px #fff;
   transform: scaleX(0);
   transition: transform 200ms ease-in-out, border-color 200ms ease-in-out;
 }
@@ -169,7 +174,7 @@ h3 {
 .scrolled .list-horizontal .list__item a:after {
   display: block;
   content: "";
-  border-bottom: solid 1px #1B1F2B;
+  border-bottom: solid 2px #1B1F2B;
   transform: scaleX(0);
   transition: transform 200ms ease-in-out, border-color 200ms ease-in-out;
 }
@@ -199,7 +204,7 @@ h3 {
 }
 
 .title {
-  width: 40%;
+  width: 768px;
   margin: 0 auto;
   padding-top: 207px;
 }
@@ -260,7 +265,7 @@ h3 {
 .tour .list-horizontal .list__item a:after {
   display: block;
   content: "";
-  border-bottom: solid 1px #1B1F2B;
+  border-bottom: solid 2px #1B1F2B;
   transform: scaleX(0);
   transition: transform 200ms ease-in-out, border-color 200ms ease-in-out;
 }
@@ -280,6 +285,7 @@ h3 {
 
 .cards {
   display: flex;
+  flex-wrap: wrap;
   width: 1170px;
   height: 1092px;
   margin: 0 auto;
@@ -347,4 +353,167 @@ h3 {
 }
 .cards__item:hover .card__btn {
   background-color: #286562;
+}
+
+.create .create__subtitle {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 142%;
+  letter-spacing: 0%;
+  margin-top: 30px;
+  text-align: center;
+  color: Gray;
+}
+.create .form {
+  width: 1170px;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 70px;
+  background-color: #fff;
+  border-radius: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.create .form .form__item {
+  height: 104px;
+  position: relative;
+  width: 500px;
+  margin-bottom: 33px;
+}
+.create .form .form__item img {
+  position: absolute;
+  right: 24px;
+  top: 66px;
+}
+.create .form .form__item p {
+  width: 100%;
+  margin-bottom: 8px;
+  height: 28px;
+}
+.create .form .form__item .form__input {
+  width: 100%;
+  height: 68px;
+  border-radius: 10px;
+  border: 1px solid #F4F0E9;
+  background-color: #F9F7F4;
+  padding: 20px;
+  gap: 10px;
+  transition: 0.2s;
+  outline: none;
+  resize: none;
+  cursor: pointer;
+}
+.create .form .form__item .form__input:hover {
+  background-color: #F4F0E9;
+}
+.create .form .form__item .form__input:focus {
+  border-color: #A6A6A6;
+}
+.create .form .form__item .form__input .default-select {
+  color: #A6A6A6;
+}
+.create .form .form__item input {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 142%;
+  letter-spacing: 0;
+}
+.create .form .form__item input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 142%;
+  letter-spacing: 0;
+  color: #A6A6A6;
+}
+.create .form .form__item input::placeholder {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 142%;
+  letter-spacing: 0;
+  color: #A6A6A6;
+}
+.create .form .form__item input[type=radio] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+  width: 26px;
+  height: 26px;
+}
+.create .form .form__item input[type=radio]::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  width: 26px;
+  height: 26px;
+  background-image: url("/src/icons/radiobutton.svg");
+}
+.create .form .form__item input[type=radio]:checked:before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background-image: url("/src/icons/radiobutton-check.svg");
+}
+.create .form .form__item input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+  width: 26px;
+  height: 26px;
+}
+.create .form .form__item input[type=checkbox]::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  width: 26px;
+  height: 26px;
+  background-image: url("/src/icons/checkbox.svg");
+}
+.create .form .form__item input[type=checkbox]:checked:before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background-image: url("/src/icons/checkbox-check.svg");
+}
+.create .form .form__item select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 142%;
+  letter-spacing: 0;
+  color: #A6A6A6;
+}
+.create .form .form__item option {
+  color: #000;
+}
+.create .form .big {
+  width: 1030px;
+}
+.create .form .form__comment {
+  height: 188px;
+}
+.create .form .form__comment textarea {
+  height: 153px !important;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 142%;
+  letter-spacing: 0;
+}
+.create .form .radio {
+  height: initial;
+}
+.create .form .radio label {
+  margin-right: 31px;
+}
+.create .form .radio label span {
+  margin-left: 8px;
+}
+.create .form .checkbox label input {
+  margin-right: 19px;
 }/*# sourceMappingURL=style.css.map */

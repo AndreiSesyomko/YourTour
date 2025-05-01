@@ -1,0 +1,168 @@
+@import 'variables';
+@import 'mixins';
+
+.create {
+    .create__subtitle {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 142%;
+        letter-spacing: 0%;
+        margin-top: 30px;
+        text-align: center;
+        color: Gray;
+    }
+    .form {
+        width: 1170px;
+        margin: 0 auto;
+        margin-top: 100px;
+        padding: 70px;
+        background-color: $white;
+        border-radius: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        .form__item {
+            height: 104px;
+            position: relative;
+            width: 500px;
+            margin-bottom: 33px;
+            img {
+                position: absolute;
+                right: 24px;
+                top: 66px;
+            }
+            p {
+                width: 100%;
+                margin-bottom: 8px;
+                height: 28px;
+            }
+            .form__input {
+                width: 100%;
+                height: 68px;
+                border-radius: 10px;
+                border: 1px solid $beige-200;
+                background-color: $beige-100;
+                padding: 20px;
+                gap: 10px;
+                transition: .2s;
+                outline: none;
+                resize: none;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $beige-200;
+                }
+
+                &:focus {
+                    border-color: $gray-300;
+                }
+
+                .default-select {
+                    color: $gray-300;
+                }
+            }
+
+            input {
+                @include form_text;
+            }
+            
+
+            input::placeholder {
+                @include form_text;
+                color: $gray-300;
+            }
+
+            input[type="radio"] {
+                appearance: none;
+                position: relative;
+                width: 26px;
+                height: 26px;
+            }
+
+            input[type="radio"]::before {
+                content: '';
+                position: absolute;
+                top: 5px;
+                width: 26px;
+                height: 26px;
+                background-image: url('/src/icons/radiobutton.svg');
+            }
+
+            input[type="radio"]:checked:before {
+                content: '';
+                position: absolute;
+                width: 26px;
+                height: 26px;
+                background-image: url('/src/icons/radiobutton-check.svg');
+            }
+
+            input[type="checkbox"] {
+                appearance: none;
+                position: relative;
+                width: 26px;
+                height: 26px;
+            }
+
+            input[type="checkbox"]::before {
+                content: '';
+                position: absolute;
+                top: 10px;
+                width: 26px;
+                height: 26px;
+                background-image: url('/src/icons/checkbox.svg');
+            }
+
+            input[type="checkbox"]:checked:before {
+                content: '';
+                position: absolute;
+                width: 26px;
+                height: 26px;
+                background-image: url('/src/icons/checkbox-check.svg');
+            }
+
+            select {
+                appearance: none;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 142%;
+                letter-spacing: 0;
+                color: $gray-300;
+            }
+            
+
+            option {
+                color: #000;
+            }
+        }
+        .big {
+            width: 1030px;
+        }
+        
+        .form__comment {
+            height: 188px;
+            textarea {
+                height: 153px !important;
+                @include form_text;
+            }
+        }
+
+        .radio {
+            height: initial;
+            label {
+                margin-right: 31px;
+                span {
+                   margin-left: 8px;
+                }
+            }
+        }
+
+        .checkbox {
+            label {
+                input {
+                    margin-right: 19px;
+                }
+            }
+        }
+    }
+}

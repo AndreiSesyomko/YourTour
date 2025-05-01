@@ -26,7 +26,7 @@
         <p class="subtitle p-normal">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
         <div class="btn p-small">Найти тур</div>
     </header>
-    <section class="tour">
+    <section class="tour" id="tour">
         <h2>Выбери свой тур</h2>
         <ul class="list-horizontal">
             <li class="list__item p-big"><a href="#">Популярные</a></li>
@@ -86,7 +86,60 @@
             </li>
         </ul>
     </section>
-    <sectoin class="create"></sectoin>
-    <script src="/src/index.js"></script>
+    <sectoin class="create">
+        <h2>Собери свой тур</h2>
+        <p class="p-normal create__subtitle">Идейные соображения высшего порядка, <br> а также рамки и место обучения кадров</p>
+        <form class="form">
+            <div class="form__item">
+                <p class="p-normal">Имя</p>
+                <input placeholder="Введите Ваше имя" type="text" class="form__input">
+            </div>
+            <div class="form__item">
+                <p class="p-normal">Направление</p>
+                <select id="select" class="form__input">
+                    <option selected disabled hidden class="default-select p-normal">Куда хотите ехать</option>
+                    <option>В горы</option>
+                    <option>В горы</option>
+                    <option>В горы</option>
+                    <option>В горы</option>
+                    <option>В горы</option>
+                </select>
+                <img src="/src/icons/select-arrow.svg" alt="arrow">
+            </div>
+            <div class="form__item">
+                <p class="p-normal">Email</p>
+                <input id="email" placeholder="example@mail.com" type="email" class="form__input">
+            </div>
+            <div class="form__item">
+                <p class="p-normal">Телефон</p>
+                <input id="phone" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _" name="form__input" type="text" class="form__input">
+            </div>
+            <div class="form__item">
+                <p class="p-normal">Дата от</p>
+                <input id="date_from" placeholder="ДД.ММ.ГГГГ" name="form__input" type="text" class="form__input">
+            </div>
+            <div class="form__item">
+                <p class="p-normal">Дата до</p>
+                <input id="date_to" placeholder="ДД.ММ.ГГГГ" name="form__input" type="text" class="form__input">
+            </div>
+            <div class="form__item big form__comment">
+                <p class="p-normal">Комментарий</p>
+                <textarea class="form__input"></textarea>
+            </div>
+            <div class="form__item big radio">
+                <p class="p-normal">Вам есть 18 лет?</p>
+                <label class="p-normal"><input value="radio1" type="radio" name="radio"><span>Дa</span></label>
+                <label class="p-normal"><input type="radio" value="radio2" name="radio"><span>Нет</span></label>
+            </div>
+            <div class="form__item big checkbox">
+                <label class="p-small"><input type="checkbox" class="from__checkbox">Нажимая кнопку, я принимаю условия <span>Лицензионного договора</span></label>
+            </div>
+            <div class="form__item big">
+                <div class="form_btn">Найти тур</div>
+                <div class="form_btn">Сбросить</div>
+            </div>
+        </form>
+    </sectoin>
+    <script type="module" src="/src/js/index.js"></script>
 </body>
 </html>

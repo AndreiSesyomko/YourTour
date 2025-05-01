@@ -10,7 +10,7 @@
         a:after {
             display: block;
             content: '';
-            border-bottom: solid 1px $b-color;  
+            border-bottom: solid 2px $b-color;  
             transform: scaleX(0);  
             transition: transform 200ms ease-in-out, border-color 200ms ease-in-out;
         }
@@ -25,4 +25,12 @@
     .list__item:last-child {
         margin-right: 0;
     }
+}
+
+@mixin form_text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%;
+    letter-spacing: 0;
+    
 }
