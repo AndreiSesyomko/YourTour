@@ -32,5 +32,43 @@
     font-size: 20px;
     line-height: 142%;
     letter-spacing: 0;
-    
+}
+
+@mixin form_button($bg, $t-color, $hover-bg, $active-bg) {
+    min-width: 235px;
+    height: 58px;
+    gap: 10px;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    color: $t-color;
+    background-color: $bg;
+    margin-right: 30px;
+    text-align: center;
+    transition: .3s ease;
+    cursor: pointer;
+    &:hover {
+        background-color: $hover-bg;
+        color: $t-color;
+    }
+    &:active {
+        background-color: $active-bg;
+        color: $t-color;
+    }
+}
+
+@mixin link {
+        color: $black;
+        transition: .3s ease;
+        cursor: pointer;
+        position: relative;
+    &:hover {
+        text-decoration: underline;
+    }
+    &:active {
+        text-decoration: underline;
+        color: $green-400;
+    }
 }

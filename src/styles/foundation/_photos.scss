@@ -1,0 +1,50 @@
+@import 'variables';
+@import 'typo';
+
+.photos {
+    padding: 135px 30px;
+    padding-top: 133px;
+    padding-bottom: 0;
+    h2 {
+        margin-bottom: 2px;
+    }
+    .photos__subtitle {
+        color: $gray-300;
+        text-align: center;
+        margin: 30px auto 100px auto;
+    }
+
+    .photos__content {
+        min-width: 1860px;
+    }
+
+    .photos__first {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    .photos__first:last-child {
+        margin-bottom: 0;
+    }
+    
+    .photos__first > img {
+        width: 443.5px;
+        height: 301px;
+        border-radius: 50px;
+    }
+
+    .photos__second {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    
+    .photos__second > img {
+        width: 349.16px;
+        min-height: 301px;
+        border-radius: 50px;
+    }
+}

@@ -41,17 +41,18 @@ $green-100: #E0F0E5;
 .btn {
     width: 118px;
     height: 34px;
-    gap: 10px;
     border-radius: 10px;
-    padding-top: 5px;
-    padding-right: 20px;
+    padding-top: 6px;
+    padding-right: 1px;
     padding-bottom: 5px;
-    padding-left: 20px;
     background-color: $white;
     margin: 0 auto;
+    text-overflow: unset;
     cursor: pointer;
     color: $black;
     transition: .2s;
+    font-size: 18px !important;
+    letter-spacing: -0.5px !important;
 
     &:hover {
         background-color: $orange-200;

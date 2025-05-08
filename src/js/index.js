@@ -14,3 +14,8 @@ document.getElementById('date_from').addEventListener('focusin', (e) => date.dat
 document.getElementById('date_from').addEventListener('focusout', (e) => date.dateOut(e.target, document.getElementById('date_to'), -1))
 document.getElementById('date_to').addEventListener('focusin', (e) => date.dateIn(e.target, document.getElementById('date_from'), 'min'))
 document.getElementById('date_to').addEventListener('focusout', (e) => date.dateOut(e.target, document.getElementById('date_from'), 1))
+document.getElementById('clear').addEventListener('click', () => {
+    document.getElementById('form').reset();
+    document.getElementById('email').style.borderColor = '#F4F0E9'
+})
+

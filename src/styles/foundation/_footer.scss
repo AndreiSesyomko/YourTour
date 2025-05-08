@@ -1,0 +1,35 @@
+@import 'variables';
+@import 'typo';
+@import 'mixins';
+
+.footer {
+    display: flex;
+    padding: 30px 376px;
+    background-color: $beige-200;
+    justify-content: space-between;
+    width: 1920px;
+    height: 88px;
+
+    .footer__content {
+        color: $gray-300;
+    }
+
+    .footer__links {
+        display: flex;
+        align-items: center;
+        width: 404px;
+        height: 28px;
+        justify-content: space-between;
+        a {
+            @include link;
+            display: flex;
+            align-items: center;
+            img {
+                margin-right: 10px;
+            }
+        }
+        .f-a:first-child {
+            margin-left: -1px;
+        }
+    }
+}
