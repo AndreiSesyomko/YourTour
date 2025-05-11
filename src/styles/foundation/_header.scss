@@ -14,7 +14,7 @@ $gray-100: #F1F3F2;
 $green-100: #E0F0E5;
 
 .header {
-    width: 100%;
+    width: 1920px;
     height: 831px;
     background: url('/src/images/header-img.png');
     color: $white;
@@ -64,4 +64,15 @@ $green-100: #E0F0E5;
         color: $black;
     }
     
+}
+
+@media(max-width: 1024px) {
+    .header {
+        width: 1024px;
+    }
+    .subtitle {
+        width: 405px;
+        margin-left: 309px;
+        margin-right: 291px;
+    }
 }

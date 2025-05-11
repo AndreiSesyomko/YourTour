@@ -50,3 +50,19 @@
 
     }
 }
+
+@media(max-width: 1024px) {
+    .reviews {
+        padding: 135px 53px;
+    }
+
+    .reviews__content {
+        margin-bottom: -2px !important;
+    }
+
+    .review__item {
+        min-width: 450px !important;
+        min-height: 841px !important;
+        margin-right: 18px !important;
+    }
+}

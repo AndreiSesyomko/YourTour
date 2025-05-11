@@ -132,3 +132,13 @@
         }
     }
 }
+
+@media (max-width: 1024px) {
+    .story {
+        padding: 135px 53px;
+    }
+
+    .story__item {
+        width: 918px !important;
+    }
+}

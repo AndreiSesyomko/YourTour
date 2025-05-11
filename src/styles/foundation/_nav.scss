@@ -16,13 +16,14 @@
 }
 
 .logo {
-    width: 181.83506774902344px;
-    height: 30.239999771118164px;
+    width: 182.83506774902344px;
+    height: 34.239999771118164px;
     cursor: pointer;
 }
 
 .list-horizontal {
     @include horizontal-list($white);
+    margin-right: 1px;
 }
 
 .tel {
@@ -36,5 +37,41 @@
     
     .list-horizontal {
         @include horizontal-list($black);
+    }
+}
+
+@media(max-width: 1024px) {
+    .nav {
+        padding: 28.88px 57px;
+    }
+
+    .list-horizontal {
+        @include horizontal-list($white, 30px);
+    }
+}
+
+@media(max-width: 360px) {
+    .nav {
+        width: 360px;
+        padding: 33px 20px;
+    }
+
+    .list-horizontal {
+        display: none !important;
+    }
+
+    .logo {
+        width: 134px;
+        height: 23px;
+
+    }
+
+    .tel {
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 16px !important;
+        line-height: 142%;
+        letter-spacing: 0%;
+
     }
 }

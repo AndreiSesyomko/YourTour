@@ -227,3 +227,52 @@
         }
     }
 }
+
+@media (max-width: 1024px) {
+    .create {
+        h2 {
+            margin-top: 0;
+        }
+    }
+
+    .form {
+        width: 918px !important;
+        height: 966px !important;
+        padding: 60px !important;
+        margin-bottom: -1px !important;
+    }
+    
+    .form__item {
+        width: 389px !important;
+        height: 104px !important;
+    }
+
+    .form__item:nth-child(1) {
+        margin-top: 0 !important;
+    }
+
+    .form__item:nth-child(2) {
+        margin-top: 0 !important;
+    }
+
+    .form__comment {
+        width: 100% !important;
+    }
+
+    .radio {
+        width: 100% !important;
+        margin-top: 116px !important;
+    }
+
+    .checkbox {
+        width: 100% !important;
+        margin-top: -20px !important;
+        .form__checkbox {
+            margin-right: 6px !important;
+        }
+    }
+
+    .form__buttons {
+        margin-top: -32px !important;
+    }
+}
