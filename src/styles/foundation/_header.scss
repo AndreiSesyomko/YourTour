@@ -51,7 +51,7 @@ $green-100: #E0F0E5;
     cursor: pointer;
     color: $black;
     transition: .2s;
-    font-size: 18px !important;
+    font-size: 18px;
     letter-spacing: -0.5px !important;
 
     &:hover {
@@ -74,5 +74,42 @@ $green-100: #E0F0E5;
         width: 405px;
         margin-left: 309px;
         margin-right: 291px;
+    }
+}
+
+@media(max-width: 360px) {
+    .header {
+        width: 360px;
+        height: 488px;
+    }
+
+    .title {
+        width: 360px;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 112.00000000000001%;
+        letter-spacing: 1px;
+        text-align: center;
+        padding-top: 141px;
+        margin-bottom: 41px !important;
+
+    }
+
+    .subtitle {
+        height: 69px !important;
+        width: 310px !important;
+        font-weight: 400 !important;
+        font-size: 16px !important;
+        line-height: 142% !important;
+        letter-spacing: 0% !important;
+        text-align: center !important;
+        margin: 0 auto;
+        margin-bottom: 38px !important;
+    }
+
+    .btn {
+        padding-top: 4px;
+        width: 115px;
+        font-size: 17px;
     }
 }
