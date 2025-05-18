@@ -24,6 +24,7 @@
 .list-horizontal {
     @include horizontal-list($white);
     margin-right: 1px;
+    margin-top: 4px;
 }
 
 .tel {

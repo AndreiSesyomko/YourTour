@@ -74,7 +74,7 @@
             }
 
             .radio2 {
-                margin-right: 22px !important;
+                margin-right: 22px ;
             }
 
             input {
@@ -171,8 +171,8 @@
         
         .form__comment {
             height: 188px;
-            textarea {
-                height: 153px !important;
+            .comment {
+                height: 153px;
                 @include form_text;
             }
         }
@@ -236,43 +236,212 @@
     }
 
     .form {
-        width: 918px !important;
-        height: 966px !important;
-        padding: 60px !important;
-        margin-bottom: -1px !important;
+        width: 918px;
+        height: 966px ;
+        padding: 60px ;
+        margin-bottom: -1px ;
     }
     
     .form__item {
-        width: 389px !important;
-        height: 104px !important;
+        width: 389px ;
+        height: 104px ;
     }
 
     .form__item:nth-child(1) {
-        margin-top: 0 !important;
+        margin-top: 0 ;
     }
 
     .form__item:nth-child(2) {
-        margin-top: 0 !important;
+        margin-top: 0 ;
     }
 
     .form__comment {
-        width: 100% !important;
+        width: 100% ;
     }
 
     .radio {
-        width: 100% !important;
-        margin-top: 116px !important;
+        width: 100% ;
+        margin-top: 116px ;
     }
 
     .checkbox {
-        width: 100% !important;
-        margin-top: -20px !important;
+        width: 100% ;
+        margin-top: -20px ;
         .form__checkbox {
-            margin-right: 6px !important;
+            margin-right: 6px ;
         }
     }
 
     .form__buttons {
-        margin-top: -32px !important;
+        margin-top: -32px ;
+    }
+}
+
+@media(max-width: 360px) {
+    .create {
+        h2 {
+            font-weight: 700;
+            font-size: 34px;
+            line-height: 112.00000000000001%;
+            letter-spacing: 0.7px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .create__subtitle {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 142%;
+            letter-spacing: 0%;
+            text-align: center;
+            margin: 0;
+            margin-bottom: 40px;
+        }
+
+        .form {
+            display: block;
+            margin-top: 0;
+            width: 318px;
+            height: 1110px;
+            border-radius: 30px;
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-bottom: 40px;
+            justify-content: start;
+            align-items: start;
+            padding-left: 20px;
+            .form__item {
+                margin-top: 0;
+                margin-bottom: 30px;
+                height: 74px;
+
+                img {
+                    right: 236px;
+                    top: 49px;
+                }
+                p {
+                    margin-bottom: 8px;
+                    height: 23px;
+                }
+                .form__input {
+                    width: 278px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 142%;
+                    letter-spacing: 0%;
+                    height: 43px;
+                    border-radius: 10px;
+                    padding: 10px;
+                    height: 43px;
+
+                    &::placeholder{
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 142%;
+                        letter-spacing: 0%;
+                    }
+
+                    }
+                    .radio1 {
+                        margin-left: -12px;
+                        margin-right: 14px;
+                    }
+
+                    input[type=radio] {
+                        margin-top: -12px;
+                    }
+
+                    input[type=radio]::before {
+                        background-size: cover;
+                        width: 20px;
+                        height: 20px;
+                        top: 10px;
+                        left: 7px;
+                    }
+
+                    input[type=checkbox]::before {
+                        background-size: cover;
+                        width: 20px;
+                        height: 20px;
+                        top: 11px;
+                        left: -34px;
+                    }
+            }
+
+            .form__comment {
+                height: 163px;
+                .comment {
+                    height: 132px;
+                }
+            }
+
+            .radio {
+                margin: 0;
+            }
+
+            .p-normal {
+                font-family: Roboto;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 142%;
+                letter-spacing: 0%;
+
+            }
+            .form__buttons {
+                display: flex;
+                margin-top: 50px;
+            }
+
+            .form__select {
+                height: 77px;
+                position: relative;
+            }
+    
+            .form_btn:first-child {
+                min-width: 0;
+                height: 47px;
+                width: 134px;
+                display: block;
+                width: 134px;
+                border-radius: 10px;
+                padding: 15px;
+                margin-right: 10px;
+
+            }
+    
+            .form_btn {
+                min-width: 0;
+                height: 47px;
+                width: 134px;
+                display: block;
+                border-radius: 10px;
+                padding: 15px;
+            }
+            
+            .checkbox {
+                padding-left: 30px;
+                margin-bottom: -12px;
+                margin-top: -5px;
+                .p-small{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 142%;
+                letter-spacing: 0%;
+                }
+                span { 
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 142%;
+                letter-spacing: 0%;
+                }
+                label {
+                    input {
+                        margin-right: -30px;
+                    }
+                }
+            }
+        
+        }
+        
     }
 }

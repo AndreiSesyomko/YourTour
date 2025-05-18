@@ -57,12 +57,50 @@
     }
 
     .reviews__content {
-        margin-bottom: -2px !important;
+        margin-bottom: -2px ;
     }
 
     .review__item {
-        min-width: 450px !important;
-        min-height: 841px !important;
-        margin-right: 18px !important;
+        min-width: 450px ;
+        min-height: 841px ;
+        margin-right: 18px ;
+    }
+}
+
+@media(max-width: 360px) {
+    .reviews {
+        width: 360px;
+        padding: 75px 21px;
+        h2 {
+            font-weight: 700;
+            width: 318px;
+            font-size: 35px;
+            line-height: 108%;
+            letter-spacing: 2%;
+            text-align: center;
+            margin-bottom: 21px;
+        }
+
+        .p-normal {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 142%;
+            letter-spacing: 0%;
+            text-align: center;
+            margin: 0;
+            margin-bottom: 50px;
+        }
+
+        .reviews__content {
+            display: block;
+        }
+
+        .review__item {
+            width: 318px;
+            height: 408px;
+            border-radius: 20px;
+            padding: 20px;
+
+        }
     }
 }
