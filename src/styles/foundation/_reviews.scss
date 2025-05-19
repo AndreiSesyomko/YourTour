@@ -96,11 +96,38 @@
         }
 
         .review__item {
-            width: 318px;
-            height: 408px;
+            min-width: 317px;
+            min-height: 408px;
             border-radius: 20px;
             padding: 20px;
+            &:first-child {
+                margin-bottom: 18px;
+            }
 
+            .review__text {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 144%;
+                letter-spacing: 0%;
+                margin-bottom: 40px;
+            }
+
+            .review__reviewer {
+                .reviewer__name {
+                    font-weight: 700;
+                    font-size: 23px;
+                    line-height: 138%;
+                    letter-spacing: 1px;
+
+                }
+                .reviewer__tour {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 142%;
+                    letter-spacing: -1%;
+
+                }
+            }
         }
     }
 }
