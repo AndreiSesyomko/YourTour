@@ -30,3 +30,37 @@
         padding: 0 126.5px 135px 126.5px;
     }
 }
+
+@media (max-width: 360px) {
+    .invite {
+        width: 360px;
+        padding: 75px 34.5px;
+        display: block;
+        img {
+            width: 130px;
+            display: block;
+            height: 133px;
+            border-radius: 20px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+        h3 {
+            font-family: Roboto;
+            font-weight: 700;
+            font-size: 23px;
+            line-height: 121%;
+            letter-spacing: 0.9px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p {
+            font-family: Roboto;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 148%;
+            letter-spacing: 0%;
+            text-align: center;
+
+        }
+    }
+}

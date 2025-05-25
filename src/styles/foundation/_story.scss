@@ -139,6 +139,97 @@
     }
 
     .story__item {
-        width: 918px !important;
+        width: 918px;
+    }
+}
+
+@media (max-width: 360px) {
+    .story {
+        padding: 75px 21px 0 21px;
+        h2 {
+            font-family: Roboto;
+            font-weight: 700;
+            font-size: 34px;
+            line-height: 116%;
+            letter-spacing: 0.8px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .story__subtitle {
+            font-family: Roboto;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 142%;
+            letter-spacing: 0;
+            text-align: center;
+            margin: 0;
+            margin-bottom: 50px;
+        }
+
+        .story__item {
+            width: 318px;
+            height: 455px;
+            border-radius: 20px;
+            margin-top: 20px;
+            .story__top {
+                margin: 30px;
+                width: 263px;
+                h3 {
+                    font-family: Roboto;
+                    height: 56px;
+                    width: 150px;
+                    font-weight: 700;
+                    font-size: 23px;
+                    line-height: 122%;
+                    letter-spacing: 0.9px;
+                    margin-bottom: 20px;
+                }
+                .story__item__text {
+                    font-family: Roboto;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 144%;
+                    letter-spacing: 0;
+
+                }
+
+                ul {
+                     font-family: Roboto;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 141%;
+                    letter-spacing: 0;
+                    margin-top: 18px;
+                    margin-left: -6px;
+                    li {
+                        &::before {
+                            top: 8px;
+                            left: -14px;
+                        }
+                    }
+                }
+            }
+            .story__actions {
+                width: 123px;
+                height: 26px;
+                .story__links {
+                    display: none;
+                }
+                .story__btn {
+                    margin-left: 30px;
+                    margin-bottom: 41px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 145%;
+                    letter-spacing: 0;
+                    padding: 0;
+                    &::after {
+                        margin-top: -1px;
+                        margin-left: 16px;
+                    }
+                }
+            }
+        }
     }
 }

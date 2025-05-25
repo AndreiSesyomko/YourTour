@@ -40,3 +40,50 @@
         padding: 30px 53px;
     }
 }
+
+@media (max-width: 360px) {
+    .footer {
+        width: 360px;
+        display: block;
+        padding: 21px 21.5px;
+          .footer__content {
+            font-family: Roboto;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 142%;
+            letter-spacing: 0%;
+            text-align: center;
+            }
+            .footer__links {
+                width: 313px;
+                a {
+                    margin-left: 12px;
+                    margin-top: 9px;
+                        font-family: Roboto;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 142%;
+                        letter-spacing: 0;
+                        img {
+                            margin-right: 3px;
+                        }
+                    
+                }
+                    .f-a:first-child {
+                        margin-left: 3px;
+                        margin-top: 5px;
+                        img {
+                            margin-right: 7px;
+                        }
+                    }
+                    .f-a:last-child {
+                        margin-left: 12px;
+                        img {
+                            margin-right: 3px;
+                        }
+                    }
+            }
+    }
+
+  
+}
