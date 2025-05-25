@@ -1,0 +1,90 @@
+@import 'variables';
+@import 'typo';
+@import 'mixins';
+
+.footer {
+    display: flex;
+    padding: 30px 376px;
+    background-color: $beige-200;
+    justify-content: space-between;
+    width: 1920px;
+    height: 88px;
+
+    .footer__content {
+        color: $gray-300;
+    }
+
+    .footer__links {
+        display: flex;
+        align-items: center;
+        width: 404px;
+        height: 28px;
+        justify-content: space-between;
+        a {
+            @include link;
+            display: flex;
+            align-items: center;
+            img {
+                margin-right: 10px;
+            }
+        }
+        .f-a:first-child {
+            margin-left: -1px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .footer {
+        width: 1024px;
+        padding: 30px 53px;
+    }
+}
+
+@media (max-width: 360px) {
+    .footer {
+        width: 360px;
+        display: block;
+        padding: 21px 21.5px;
+        padding-top: 22px;
+          .footer__content {
+            font-family: Roboto;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 142%;
+            letter-spacing: 0%;
+            text-align: center;
+            }
+            .footer__links {
+                width: 313px;
+                a {
+                    margin-left: 12px;
+                    margin-top: 9px;
+                        font-family: Roboto;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 142%;
+                        letter-spacing: 0;
+                        img {
+                            margin-right: 3px;
+                        }
+                    
+                }
+                    .f-a:first-child {
+                        margin-left: 3px;
+                        margin-top: 5px;
+                        img {
+                            margin-right: 7px;
+                        }
+                    }
+                    .f-a:last-child {
+                        margin-left: 12px;
+                        img {
+                            margin-right: 3px;
+                        }
+                    }
+            }
+    }
+
+  
+}

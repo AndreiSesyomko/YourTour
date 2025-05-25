@@ -1,0 +1,125 @@
+
+$black: #1B1F2B;
+$orange-200: #EFA501;
+$green-400: #286562;
+$gray-300: #A6A6A6;
+$beige-200: #F4F0E9;
+$white: #fff;
+$orange-100: #F8E6BE;
+$green-300: #3B7E7B;
+$gray-200: #D9DFDB;
+$beige-100: #F9F7F4;
+$green-200: #627F7E;
+$gray-100: #F1F3F2;
+$green-100: #E0F0E5;
+
+.header {
+    width: 1920px;
+    height: 831px;
+    background: url('/images/header_big.png');
+    color: $white;
+    text-align: center;
+
+    h1, p, div {
+        margin-bottom: 50px;
+    }
+
+    .btn {
+    width: 118px;
+    height: 34px;
+    border-radius: 10px;
+    padding-top: 6px;
+    padding-right: 1px;
+    padding-bottom: 5px;
+    background-color: $white;
+    margin: 0 auto;
+    text-overflow: unset;
+    cursor: pointer;
+    color: $black;
+    transition: .2s;
+    font-size: 18px;
+    letter-spacing: -0.5px ;
+
+    &:hover {
+        background-color: $orange-200;
+        color: $white;
+    }
+
+    &:active {
+        background-color: $orange-100;
+        color: $black;
+    }
+    
+}
+
+}
+
+.title {
+    width: 768px;
+    margin: 0 auto;
+    padding-top: 207px;
+    line-height: 105px;
+    letter-spacing: 1.84px;
+}
+
+.subtitle {
+    width: 562px;
+    height: 56px;
+    margin: 0 auto;
+}
+
+
+
+@media(max-width: 1024px) {
+    .header {
+        width: 1024px;
+        background: url('/images/header_medium.png');
+            .subtitle {
+        width: 405px;
+        margin-left: 309px;
+        margin-right: 291px;
+    }
+
+    .btn {
+        letter-spacing: 0;
+        font-size: 17px;
+    }
+    }
+}
+
+@media(max-width: 360px) {
+    .header {
+        width: 360px;
+        height: 488px;
+        background: url('/images/header_small.png');
+        .title {
+        width: 360px;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 112.00000000000001%;
+        letter-spacing: 1px;
+        text-align: center;
+        padding-top: 141px;
+        margin-bottom: 41px ;
+
+    }
+
+    .subtitle {
+        height: 69px ;
+        width: 310px ;
+        font-weight: 400 ;
+        font-size: 16px ;
+        line-height: 142% ;
+        letter-spacing: 0% ;
+        text-align: center ;
+        margin: 0 auto;
+        margin-bottom: 38px;
+    }
+
+        .btn {
+        padding-top: 6px;
+        width: 115px;
+        font-size: 16px;
+    }
+    }
+}
