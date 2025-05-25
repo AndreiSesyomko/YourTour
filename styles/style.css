@@ -732,14 +732,14 @@ h3 {
   top: 5px;
   width: 26px;
   height: 26px;
-  background-image: url("/src/icons/radiobutton.svg");
+  background-image: url("/icons/radiobutton.svg");
 }
 .create .form .form__item input[type=radio]:checked:before {
   content: "";
   position: absolute;
   width: 26px;
   height: 26px;
-  background-image: url("/src/icons/radiobutton-check.svg");
+  background-image: url("/icons/radiobutton-check.svg");
 }
 .create .form .form__item input[type=checkbox] {
   -webkit-appearance: none;
@@ -757,14 +757,14 @@ h3 {
   left: -5px;
   width: 26px;
   height: 26px;
-  background-image: url("/src/icons/checkbox.svg");
+  background-image: url("/icons/checkbox.svg");
 }
 .create .form .form__item input[type=checkbox]:checked:before {
   content: "";
   position: absolute;
   width: 26px;
   height: 26px;
-  background-image: url("/src/icons/checkbox-check.svg");
+  background-image: url("/icons/checkbox-check.svg");
 }
 .create .form .form__item select {
   -webkit-appearance: none;

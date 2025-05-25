@@ -102,7 +102,7 @@
                 top: 5px;
                 width: 26px;
                 height: 26px;
-                background-image: url('/src/icons/radiobutton.svg');
+                background-image: url('/icons/radiobutton.svg');
             }
 
             input[type="radio"]:checked:before {
@@ -110,7 +110,7 @@
                 position: absolute;
                 width: 26px;
                 height: 26px;
-                background-image: url('/src/icons/radiobutton-check.svg');
+                background-image: url('/icons/radiobutton-check.svg');
             }
 
             input[type="checkbox"] {
@@ -128,7 +128,7 @@
                 left: -5px;
                 width: 26px;
                 height: 26px;
-                background-image: url('/src/icons/checkbox.svg');
+                background-image: url('/icons/checkbox.svg');
             }
 
             input[type="checkbox"]:checked:before {
@@ -136,7 +136,7 @@
                 position: absolute;
                 width: 26px;
                 height: 26px;
-                background-image: url('/src/icons/checkbox-check.svg');
+                background-image: url('/icons/checkbox-check.svg');
             }
 
             select {
